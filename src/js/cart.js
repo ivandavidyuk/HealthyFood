@@ -94,3 +94,5 @@ refreshButton.addEventListener('click', function (e) {
         refreshButton.style.display = 'none'
     }
 })
+
+console.log(eatenArray)
