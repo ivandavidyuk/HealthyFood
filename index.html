@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Healthy food</title>
+</head>
+
+<body>
+    <div class="btn-up btn-up_hide"></div>
+    <header>
+        <div class="container">
+            <div class="header__row">
+                <a href="index.html" class="header__logo"><img src="src/images/green.svg" alt="" width="50px"></a>
+                <div class="header__menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a href="calculator.html" class="menu__link">Калькулятор калорий</a></li>
+                            <li><a href="" class="menu__link">Продукты</a></li>
+                            <li><a href="cart.html">Моя корзина</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cart">
+                    <a class="calories__amount" href=""></a>
+                    <a href="cart.html" class="header__diet"><img src="src/images/cart.svg" alt="" width="50px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div class="container">
+            <div class="mealtime">
+                <fieldset class="meals">
+                    <input required checked name="meal" type="radio" value="all" id="all" class="meal"><label
+                        data-f="all" for="all">Все</label>
+                    <input required name="meal" type="radio" value="breakfast" id="breakfast" class="meal"><label
+                        data-f="breakfast" for="breakfast">Завтрак</label>
+                    <input name="meal" type="radio" value="lunch" id="lunch" class="meal"><label data-f="lunch"
+                        for="lunch">Обед</label>
+                    <input name="meal" type="radio" value="dinner" id="dinner" class="meal"><label data-f="dinner"
+                        for="dinner">Ужин</label>
+                    <input name="meal" type="radio" value="snack" id="snack" class="meal"><label data-f="snack"
+                        for="snack">Перекус</label>
+                </fieldset>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="container">
+            <div class="dishes">
+                <ul class="dishes__list">
+                </ul>
+                <template class="dish__template">
+                    <li class="dish">
+                        <div class="dish__top">
+                            <div class="photo__container"><img class="dish__photo" src="src/images/eggs.jpg" alt="">
+                            </div>
+                            <div class="dish__bottom">
+                                <h2 class="name">Вареное яйцо</h2>
+                                <div class="macros__row">
+                                    <div class="counter">
+                                        <input type="text" class="counter__value subdomain" name="subdomain"
+                                            inputmode="numeric" placeholder="100">
+                                        <input type="text" class="subdomaintwo" name="subdomaintwo" value=" гр."
+                                            disabled readonly="readonly" />
+                                    </div>
+                                    <div class="info__column">
+                                        <h3 class="pfc"> БЖУ 7.8|7.2|0.42</h3>
+                                        <h2 class="price">95.4 кКал</h2>
+                                    </div>
+                                </div>
+                                <button class="eat">Съесть</button>
+                            </div>
+                    </li>
+                </template>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="info">
+                <ul class="socials">
+                    <li class="icon">
+                        <a href="https://t.me/vanyadavidyuk" target="telegram"><img src="src/images/telegram.svg"
+                                alt=""></a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.instagram.com/ivan_davidyuk11/" target="insta"><img
+                                src="src/images/insta.svg" alt="instagram"></a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://vk.com/vanyadavidyuk" target="vk"><img src="src/images/vk.svg" alt=""></a>
+                    </li>
+                </ul>
+                <p class="copyright">HealthyFood Copyright © 2023 HealthyFood - All rights reserved || Made By: Ivan
+                    Davidyuk</p>
+            </div>
+            <p class="margin">123</p>
+        </div>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

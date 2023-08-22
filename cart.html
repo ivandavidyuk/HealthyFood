@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Healthy food</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__row">
+                <a href="index.html" class="header__logo"><img src="src/images/green.svg" alt="" width="50px"></a>
+                <div class="header__menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a href="calculator.html" class="menu__link">Калькулятор калорий</a></li>
+                            <li><a href="index.html" class="menu__link">Продукты</a></li>
+                            <li><a href="">Моя корзина</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cart">
+                    <a class="calories__amount" href=""></a>
+                    <a href="cart.html" class="header__diet"><img src="src/images/cart.svg" alt="" width="50px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="cartpage">
+        <div class="container">
+            <div class="cart_eaten">
+                <h1>Моя корзина</h1>
+                <div class="cartpage__macros">
+                    <h2>Употреблено за день: </h2>
+                    <p><span class="kcal"></span><span class="PFC"></span></p>
+                </div>
+                <div class="eaten">
+                    <button class="refresh"><img src="src/images/refresh.svg" alt="" style="width: 20px;"> Сбросить</button>
+                    <ul class="eaten__list">
+                    </ul>
+                </div>
+                <template class="eaten__template">
+                    <li class="eaten__item">
+                        <div class="eaten__photo"><img src="" alt=""></div>
+                        <div class="eaten__info">
+                            <h2 class="name"></h2>
+                            <h3 class="macros"></h3>
+                            <h2 class="price"></h2>
+                        </div>
+                        <button class="delete">Удалить из списка</button>
+                    </li>
+                </template>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="info">
+                <ul class="socials">
+                    <li class="icon">
+                        <a href="https://t.me/vanyadavidyuk" target="telegram"><img src="src/images/telegram.svg"
+                                alt=""></a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.instagram.com/ivan_davidyuk11/" target="insta"><img
+                                src="src/images/insta.svg" alt="instagram"></a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://vk.com/vanyadavidyuk" target="vk"><img src="src/images/vk.svg" alt=""></a>
+                    </li>
+                </ul>
+                <p class="copyright">HealthyFood Copyright © 2023 HealthyFood - All rights reserved || Made By: Ivan
+                    Davidyuk</p>
+            </div>
+            <p class="margin">123</p>
+        </div>
+    </footer>
+    <script src="src/js/cart.js"></script>
+</body>
+
+</html>
