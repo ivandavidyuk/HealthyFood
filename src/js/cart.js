@@ -21,7 +21,7 @@ let eatenInsert = function (array) {
         eaten.querySelector('.macros').textContent = array[i].pfc
         eaten.querySelector('.price').textContent = array[i].kcal + ' кКал'
         eaten.querySelector('.eaten__photo img').src = array[i].img
-    
+
         eatenList.append(eaten)
     }
 }
@@ -52,7 +52,13 @@ pfcSum(eatenArray)
 // кнопка delete
 
 let deleteButtons = document.querySelectorAll('.delete')
+let refreshButton = document.querySelector('.refresh')
 
+let isZero = function () {
+    if (kcalOutput.innerHTML == '0 кКал') {
+        refreshButton.style.display = 'none'
+    }
+}
 
 deleteButtons.forEach(function (button, i) {
     button.addEventListener('click', function (e) {
@@ -70,14 +76,16 @@ deleteButtons.forEach(function (button, i) {
         window.localStorage.setItem('eatenArrayStringified', JSON.stringify(eatenArray))
         console.log(eatenArray)
         e.target.parentElement.remove()
-
+        
         caloriesSum(eatenArray)
         pfcSum(eatenArray)
-
+        isZero()
     })
 })
 
-let refreshButton = document.querySelector('.refresh')
+isZero()
+
+let eatenItem = document.querySelector('.eaten__item')
 
 refreshButton.addEventListener('click', function (e) {
     window.localStorage.removeItem('eatenArrayStringified')
@@ -89,10 +97,5 @@ refreshButton.addEventListener('click', function (e) {
     calories = initialAmount
     calories.textContent = initialAmount
     window.localStorage.setItem('calories', calories)
-
-    if (eatenArray.length == 0) {
-        refreshButton.style.display = 'none'
-    }
 })
 
-console.log(eatenArray)
