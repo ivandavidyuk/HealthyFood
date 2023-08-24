@@ -372,7 +372,19 @@ input[type="text"].subdomaintwo{
 .cart {
     display: flex;
     align-items: center;
-    margin-left: auto
+    margin-left: auto;
+    .cart__counter {
+        background-color: #ED5242;
+        width: 25px;
+        color: #fff;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 50px;
+        text-align: center;
+        position: absolute;
+        right: 28px;
+        top: 5px;
+    }
 }
 
 .info {
