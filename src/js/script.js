@@ -317,10 +317,37 @@ window.localStorage.setItem('caloriesAmount', caloriesAmount)
 calories.textContent = caloriesAmount + ' кКал'
 // корзина
 let eatenArray = JSON.parse(localStorage.getItem('eatenArrayStringified') || '[]')
+// счетчик в корзине
+let cartCounterPlus = function () {
+    number++
+    window.localStorage.setItem('numberOfProducts', number)
+    number = window.localStorage.getItem('numberOfProducts')
+    counter.innerHTML = number
+    
+    if (number == 0) {
+        counter.style.display = 'none'
+    } else {
+        counter.style.display = 'block'
+    }
+} 
+
+let counter = document.querySelector('.cart__counter');
+let number = 0;
+number = window.localStorage.getItem('numberOfProducts')
+counter.innerHTML = number
+
+if (number == 0) {
+    counter.style.display = 'none'
+} else {
+    counter.style.display = 'block'
+}
+//
 
 dishCard.forEach(function (card) {
     let eatButton = card.querySelector('.eat')
     eatButton.addEventListener('click', function () {
+        cartCounterPlus()
+
         let price = card.querySelector('.price').innerHTML.replace(/[^0-9.]+/g, '')
         let name = card.querySelector('.name').innerHTML
         let pfc = card.querySelector('.pfc').innerHTML

@@ -59,9 +59,18 @@ let isZero = function () {
         refreshButton.style.display = 'none'
     }
 }
-
+// уменьшение числа продуктов в корзине
+let cartCounterMinus = function () {
+    let number = window.localStorage.getItem('numberOfProducts')
+    number--
+    window.localStorage.setItem('numberOfProducts', number)
+}
+//
 deleteButtons.forEach(function (button, i) {
     button.addEventListener('click', function (e) {
+        // уменьшение числа продуктов в корзине
+        cartCounterMinus()
+        //
         // прибавление ккал после удлаения из списка съеденных
         caloriesAmount = window.localStorage.getItem('caloriesAmount')
         calories = window.localStorage.getItem('calories')
@@ -76,7 +85,7 @@ deleteButtons.forEach(function (button, i) {
         window.localStorage.setItem('eatenArrayStringified', JSON.stringify(eatenArray))
         console.log(eatenArray)
         e.target.parentElement.remove()
-        
+
         caloriesSum(eatenArray)
         pfcSum(eatenArray)
         isZero()
@@ -97,5 +106,9 @@ refreshButton.addEventListener('click', function (e) {
     calories = initialAmount
     calories.textContent = initialAmount
     window.localStorage.setItem('calories', calories)
+
+    let number = window.localStorage.getItem('numberOfProducts')
+    number = 0;
+    window.localStorage.setItem('numberOfProducts', number)
 })
 

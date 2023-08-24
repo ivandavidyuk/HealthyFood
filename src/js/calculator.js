@@ -73,6 +73,10 @@ function serializeForm(formNode) {
 function handleFormSubmit(event) {
     event.preventDefault();
     serializeForm(form)
+    
+    let number = window.localStorage.getItem('numberOfProducts')
+    number = 0;
+    window.localStorage.setItem('numberOfProducts', number)
 }
 
 form.addEventListener('submit', handleFormSubmit);
