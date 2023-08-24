@@ -348,6 +348,9 @@ dishCard.forEach(function (card) {
     eatButton.addEventListener('click', function () {
         cartCounterPlus()
 
+        this.style.backgroundColor = '#afafaf'
+        this.innerHTML = 'Съедено'
+
         let price = card.querySelector('.price').innerHTML.replace(/[^0-9.]+/g, '')
         let name = card.querySelector('.name').innerHTML
         let pfc = card.querySelector('.pfc').innerHTML
@@ -434,6 +437,6 @@ const btnUp = {
 }
 
 btnUp.addEventListener();
-// появление единичек около корзины
+// при перезагрузке страницы отображаются элементы у которых display: none
 // адаптив
 
