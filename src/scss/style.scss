@@ -58,7 +58,7 @@ h3 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding: 30px;
 }
 
@@ -72,7 +72,21 @@ form {
     position: absolute;
     right: 10px;
     top: 246px;
+    animation: pulse 2s ease-in-out infinite
 }
+
+@keyframes pulse {
+    from {
+        transform: scale(.85);
+    }
+    50% {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.85);
+    }
+}
+
 .sex,
 .program,
 .meals {

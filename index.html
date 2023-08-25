@@ -15,7 +15,6 @@
 </head>
 
 <body>
-    <div class="btn-up btn-up_hide"></div>
     <header>
         <div class="container">
             <div class="header__row">
@@ -23,8 +22,8 @@
                 <div class="header__menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li><a href="calculator.html" class="menu__link">Калькулятор калорий</a></li>
-                            <li><a href="" class="menu__link">Продукты</a></li>
+                            <li><a href="index.html" class="menu__link">Калькулятор калорий</a></li>
+                            <li><a href="products.html" class="menu__link">Продукты</a></li>
                             <li><a href="cart.html">Моя корзина</a></li>
                         </ul>
                     </nav>
@@ -32,57 +31,68 @@
                 <div class="cart">
                     <a class="calories__amount" href=""></a>
                     <a href="cart.html" class="header__diet"><img src="src/images/cart.svg" alt="" width="50px"></a>
-                    <span class="cart__counter"></span>
                 </div>
             </div>
         </div>
     </header>
-    <aside>
-        <div class="container">
-            <div class="mealtime">
-                <fieldset class="meals">
-                    <input required checked name="meal" type="radio" value="all" id="all" class="meal"><label
-                        data-f="all" for="all">Все</label>
-                    <input required name="meal" type="radio" value="breakfast" id="breakfast" class="meal"><label
-                        data-f="breakfast" for="breakfast">Завтрак</label>
-                    <input name="meal" type="radio" value="lunch" id="lunch" class="meal"><label data-f="lunch"
-                        for="lunch">Обед</label>
-                    <input name="meal" type="radio" value="dinner" id="dinner" class="meal"><label data-f="dinner"
-                        for="dinner">Ужин</label>
-                    <input name="meal" type="radio" value="snack" id="snack" class="meal"><label data-f="snack"
-                        for="snack">Перекус</label>
-                </fieldset>
+    <main class="calculator">
+        <div class="container container_calculator">
+            <div class="block">
+                <form action="#" id="form">
+                    <fieldset class="sex">
+                        <h2>Пол</h2>
+                        <input id="male" type="radio" name="sex" value="male" required><label for="male">Мужской</label>
+                        <input id="female" type="radio" name="sex" value="female"><label for="female">Женский</label>
+                    </fieldset>
+                    <fieldset class="parameters">
+                        <div class="parameter age">
+                            <h2>Возраст</h2>
+                            <h3>(полных лет)</h3>
+                            <input class="number_only" type="text" required name="age" maxlength="3" placeholder="24"
+                                inputmode="numeric" id="age">
+                        </div>
+                        <div class="parameter height">
+                            <h2>Рост</h2>
+                            <h3>(в см)</h3>
+                            <input class="number_only" type="text" required name="height" maxlength="3"
+                                placeholder="178" inputmode="numeric">
+                        </div>
+                        <div class="parameter weight">
+                            <h2>Вес</h2>
+                            <h3>(в кг)</h3>
+                            <input class="number_only" type="text" required name="weight" maxlength="3" placeholder="75"
+                                inputmode="numeric">
+                        </div>
+                    </fieldset>
+                    <fieldset class="activity">
+                        <h2>Физическая активность</h2>
+                        <div class="activity_values">
+                            <div class="activity_select">
+                                <select name="activity">
+                                    <option selected value="1.2">Минимальная - тренировок мало или они отсутствуют
+                                    </option>
+                                    <option value="1.375">Низкая - легкие тренировки 1-3 раза в неделю</option>
+                                    <option value="1.550">Средняя - регулярные тренировки 3-5 раз в неделю</option>
+                                    <option value="1.725">Высокая - интенсивные тренировки 6-7 раз в неделю</option>
+                                    <option value="1.9">Очень высокая - ежедневные очень интенсивные тренировки</option>
+                                </select>
+                            </div>
+                            <button class="reset" type="reset">Сбросить значения</button>
+                            <button type="submit" class="submit">Посчитать калораж</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
-        </div>
-    </aside>
-    <main>
-        <div class="container">
-            <div class="dishes">
-                <ul class="dishes__list">
-                </ul>
-                <template class="dish__template">
-                    <li class="dish">
-                        <div class="dish__top">
-                            <div class="photo__container"><img class="dish__photo" src="src/images/eggs.jpg" alt="">
-                            </div>
-                            <div class="dish__bottom">
-                                <h2 class="name">Вареное яйцо</h2>
-                                <div class="macros__row">
-                                    <div class="counter">
-                                        <input type="text" class="counter__value subdomain" name="subdomain"
-                                            inputmode="numeric" placeholder="100">
-                                        <input type="text" class="subdomaintwo" name="subdomaintwo" value=" гр."
-                                            disabled readonly="readonly" />
-                                    </div>
-                                    <div class="info__column">
-                                        <h3 class="pfc"> БЖУ 7.8|7.2|0.42</h3>
-                                        <h2 class="price">95.4 кКал</h2>
-                                    </div>
-                                </div>
-                                <button class="eat">Съесть</button>
-                            </div>
-                    </li>
-                </template>
+            <a class="continue hidden" href="products.html"></a>
+            <div class="result hidden">
+                <p>Ваш расчет калорий готов. Выберите одну из программ и переходите к выбору продуктов</p>
+                <fieldset class="program">
+                    <input id="loss" type="radio" name="weight" value="loss" required><label for="loss"
+                        class="loss"></label>
+                    <input id="maintain" type="radio" name="weight" value="maintain"><label for="maintain"
+                        class="maintain"></label>
+                    <input id="gain" type="radio" name="weight" value="gain"><label for="gain" class="gain"></label>
+                </fieldset>
             </div>
         </div>
     </main>
@@ -108,7 +118,7 @@
             <p class="margin">123</p>
         </div>
     </footer>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/calculator.js"></script>
 </body>
 
 </html>
