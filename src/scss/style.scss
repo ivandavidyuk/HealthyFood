@@ -680,6 +680,49 @@ input[type="text"].subdomaintwo{
                 left: 224px
             }
         }
+        .cart_eaten {
+            padding: 20px;
+            .eaten {
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 16px;
+                line-height: 1.5;
+                vertical-align: middle;
+            }
+            h3 {
+                font-size: 10px;
+            }
+            .delete {
+                font-size: 10px;
+            }
+            .eaten__photo {
+                width: 30%;
+            }
+            .refresh {
+                font-size: 14px;
+                padding: 3px;
+                img {
+                    width: 15px !important;
+                }
+            }
+            .cartpage__macros p {
+                font-size: 12px;
+                text-align: right;
+                margin: auto;
+                .kcal {
+                    line-height: 1.5;
+                    vertical-align: baseline;
+                }
+                .PFC {
+                    line-height: 1.5;
+                    vertical-align: baseline;
+                }
+            }
+        }
     }
     .btn-up {
         z-index: 999;

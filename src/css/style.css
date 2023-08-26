@@ -849,6 +849,49 @@ input[type=text].subdomaintwo {
   .container .cart .cart__counter {
     left: 224px;
   }
+  .container .cart_eaten {
+    padding: 20px;
+  }
+  .container .cart_eaten .eaten {
+    border-radius: 20px;
+  }
+  .container .cart_eaten h1 {
+    font-size: 20px;
+  }
+  .container .cart_eaten h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+  .container .cart_eaten h3 {
+    font-size: 10px;
+  }
+  .container .cart_eaten .delete {
+    font-size: 10px;
+  }
+  .container .cart_eaten .eaten__photo {
+    width: 30%;
+  }
+  .container .cart_eaten .refresh {
+    font-size: 14px;
+    padding: 3px;
+  }
+  .container .cart_eaten .refresh img {
+    width: 15px !important;
+  }
+  .container .cart_eaten .cartpage__macros p {
+    font-size: 12px;
+    text-align: right;
+    margin: auto;
+  }
+  .container .cart_eaten .cartpage__macros p .kcal {
+    line-height: 1.5;
+    vertical-align: baseline;
+  }
+  .container .cart_eaten .cartpage__macros p .PFC {
+    line-height: 1.5;
+    vertical-align: baseline;
+  }
   .btn-up {
     z-index: 999;
     background-color: #f1f1f1;
