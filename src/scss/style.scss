@@ -16,21 +16,21 @@ header {
     padding: 0 15px;
 }
 
-.container_calculator {
-    background-color: #fff;
-    border-radius: 50px;
-    max-width: 1155px;
-    position: relative;
-}
+// .container_calculator {
+//     background-color: #fff;
+//     border-radius: 50px;
+//     max-width: 1155px;
+//     position: relative;
+// }
 
-.calculator {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
+// .calculator {
+//     display: flex;
+//     gap: 20px;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 20px;
+// }
 
 
 h1 {
@@ -64,8 +64,11 @@ form {
 
 .block {
     background-color: #fff;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+    border-radius: 50px;
+    padding: 0 230px;
+    margin-top: 20px;
 }
 
 .continue {
@@ -85,6 +88,10 @@ form {
     to {
         transform: scale(.85);
     }
+}
+
+.program {
+    padding: 0 230px;
 }
 
 .sex,
@@ -226,11 +233,10 @@ form {
     padding: 20px 5px;
     transition: 2s ease;
     transition-property: display;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 20px;
 }
-
-
 
 .header__row {
     display: flex;
@@ -419,6 +425,7 @@ input[type="text"].subdomaintwo{
     .copyright {
         text-align: center;
         padding-bottom: 20px;
+        line-height: 1.5;
     }
 }
 .margin {
@@ -594,8 +601,102 @@ input[type="text"].subdomaintwo{
     display: none;
 }
 
+.header__logo2 {
+    display: none;
+}
+
 @media (max-width: 426px) {
     .container {
         width: 420px;
+        .socials {
+            justify-content: space-evenly;
+        }
+        .result {
+            font-size: 12px;
+            padding: 20px 10px;
+            line-height: 1.5;
+            .program {
+                padding: 0;
+                gap: 0;
+                label {
+                    line-height: 1.2;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .block {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            form {
+                padding: 20px;
+                font-size: 14px;
+                .sex label {
+                    padding: 12px;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+                .activity_select select {
+                    font-size: 12px;
+                }
+                .reset {
+                    font-size: 12px;
+                    padding: 10px;
+                }
+                .submit {
+                    font-size: 12px;
+                    padding: 10px;
+                }
+            }
+        }
+        .continue {
+            width: 40px;
+            height: 40px;
+            right: 20px;
+            top: 228px;
+        }
+        .dish {
+            flex: auto;
+        }
+        .meals {
+            gap: 0px;
+            font-size: 14px;
+            padding: 10px;
+            label {
+                margin: 0;
+            }
+        }
+        .header__menu {
+            display: none;
+        }
+        .header__logo2 {
+            display: block;
+        }
+        .cart {
+            margin: 0 auto;
+            .cart__counter {
+                left: 224px
+            }
+        }
+    }
+    .btn-up {
+        z-index: 999;
+        background-color: #f1f1f1;
+    }
+    .copyright {
+        font-size: 12px;
+        padding: 0 40px 20px 40px;
+    }
+    .header__row-index {
+        .header__diet {
+            display: none;
+        }
+    }
+    .header__row-cart {
+        .header__diet {
+            display: none;
+        }
     }
 }
