@@ -11,7 +11,7 @@ header {
 }
 
 .container {
-    width: 1170px;
+    width: 1170px; // или все же max-width?
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -19,7 +19,7 @@ header {
 .container_calculator {
     background-color: #fff;
     border-radius: 50px;
-    width: 1155px;
+    max-width: 1155px;
     position: relative;
 }
 
@@ -592,4 +592,10 @@ input[type="text"].subdomaintwo{
 }
 .hidden {
     display: none;
+}
+
+@media (max-width: 426px) {
+    .container {
+        width: 420px;
+    }
 }
