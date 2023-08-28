@@ -16,6 +16,10 @@ header {
     padding: 0 15px;
 }
 
+.container_calculator {
+    position: relative;
+}
+
 .menu-btn {
     display: none;
 }
@@ -60,8 +64,8 @@ form {
 
 .continue {
     position: absolute;
-    right: 10px;
-    top: 246px;
+    right: 25px;
+    top: 150px;
     animation: pulse 2s ease-in-out infinite
 }
 
@@ -216,7 +220,7 @@ form {
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     padding: 20px 5px;
     transition: 2s ease;
     transition-property: display;
@@ -380,17 +384,20 @@ input[type="text"].subdomaintwo{
     display: flex;
     align-items: center;
     margin-left: auto;
-    .cart__counter {
-        background-color: #ED5242;
-        width: 25px;
-        color: #fff;
-        height: 25px;
-        line-height: 25px;
-        border-radius: 50px;
-        text-align: center;
-        position: absolute;
-        right: 28px;
-        top: 5px;
+    .header__diet {
+        position: relative;
+        .cart__counter {
+            background-color: #ED5242;
+            width: 25px;
+            color: #fff;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            right: 8px;
+            top: -8px;
+        }
     }
 }
 
@@ -452,7 +459,8 @@ input[type="text"].subdomaintwo{
         }
     }
     p {
-        text-align: center;
+        line-height: 1.5;
+        text-align: right;
     } 
     .kcal {
         border-right: 3px solid #32B34C;
@@ -468,6 +476,7 @@ input[type="text"].subdomaintwo{
         margin-bottom: 20px;
         h2{
             align-self: center;
+            line-height: 1.1;
         }
     }
     h1 {
@@ -660,6 +669,16 @@ input[type="text"].subdomaintwo{
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg); 
     }
+
+.index {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.spacer {
+    flex: 1;
+}    
 // адаптив
 
 @media (max-width: 426px) {
@@ -739,7 +758,8 @@ input[type="text"].subdomaintwo{
         .cart {
             margin: 0 auto;
             .cart__counter {
-                left: 224px
+                left: 17px;
+                top: -7px;
             }
         }
         .cart_eaten {
@@ -780,14 +800,10 @@ input[type="text"].subdomaintwo{
                     vertical-align: baseline;
                 }
                 .PFC {
-                    line-height: 1.5;
+                    line-height: 2;
                     vertical-align: baseline;
                 }
             }
-        }
-        .btn-up {
-            z-index: 999;
-            background-color: #f1f1f1;
         }
         .copyright {
             font-size: 12px;
@@ -813,6 +829,10 @@ input[type="text"].subdomaintwo{
     }
     .container .block h3 {
         font-size: 12px;
+    }
+    .btn-up {
+        z-index: 999;
+        background-color: #f1f1f1;
     }
 }
 @media (max-width: 376px) {
@@ -852,6 +872,10 @@ input[type="text"].subdomaintwo{
 @media (max-width: 340px) {
     .container {
         max-width: 315px;
+        padding: 0 5px;
+        .meals {
+            font-size: 12px;
+        }
         .block {
             padding: 0px;
             h3 {
@@ -871,5 +895,11 @@ input[type="text"].subdomaintwo{
     }
     .container .block form .activity_select select {
         padding: 5px 15px;
+    }
+    .container .result .program label {
+        line-height: 1.2;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 4px;
     }
 }
