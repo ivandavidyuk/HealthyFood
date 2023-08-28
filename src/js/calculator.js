@@ -1,3 +1,11 @@
+// бургер меню
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+
 // Запрет ввода букв в input type='text'
 let numberOnly = document.querySelectorAll('.number_only');
 let prohibitedLetters = /[A-Za-zA-Яа-яЁё]/g;

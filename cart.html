@@ -16,9 +16,20 @@
 
 <body>
     <header>
+        <div class="burger">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="menu__link">Калькулятор калорий</a></li>
+                        <li><a href="products.html" class="menu__link">Продукты</a></li>
+                        <li><a href="cart.html">Моя корзина</a></li>    
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <div class="container">
             <div class="header__row header__row-cart">
-                <a href="index.html" class="header__logo"><img src="src/images/green.svg" alt="" width="50px"></a>
+                <a href="products.html" class="header__logo"><img src="src/images/green.svg" alt="" width="50px"></a>
                 <div class="header__menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
@@ -32,7 +43,11 @@
                     <a class="calories__amount" href=""></a>
                     <a href="cart.html" class="header__diet"><img src="src/images/cart.svg" alt="" width="50px"></a>
                 </div>
-                <a href="index.html" class="header__logo2"><img src="src/images/green.svg" alt="" width="50px"></a>
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -82,7 +97,7 @@
                 <p class="copyright">HealthyFood Copyright © 2023 HealthyFood - All rights reserved || Made By: Ivan
                     Davidyuk</p>
             </div>
-            <p class="margin">123</p>
+            <p class="margin margin__cart">123</p>
         </div>
     </footer>
     <script src="src/js/cart.js"></script>
