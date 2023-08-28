@@ -11,27 +11,14 @@ header {
 }
 
 .container {
-    width: 1170px; // или все же max-width?
+    max-width: 1170px; // или все же max-width?
     margin: 0 auto;
     padding: 0 15px;
 }
 
-// .container_calculator {
-//     background-color: #fff;
-//     border-radius: 50px;
-//     max-width: 1155px;
-//     position: relative;
-// }
-
-// .calculator {
-//     display: flex;
-//     gap: 20px;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     margin-top: 20px;
-// }
-
+.menu-btn {
+    display: none;
+}
 
 h1 {
     font-family: 'Lato', sans-serif;
@@ -64,7 +51,7 @@ form {
 
 .block {
     background-color: #fff;
-    width: 100%;
+    // width: 100%;
     margin: 0 auto;
     border-radius: 50px;
     padding: 0 230px;
@@ -129,7 +116,7 @@ form {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    width: 100%;
+    // width: 100%;
     input {
         border: 1px solid #32B34C;
         text-align: center;
@@ -233,7 +220,7 @@ form {
     padding: 20px 5px;
     transition: 2s ease;
     transition-property: display;
-    width: 100%;
+    // width: 100%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -443,7 +430,7 @@ input[type="text"].subdomaintwo{
     margin-top: 20px; 
     .cart_eaten {
         border-radius: 50px;
-        padding: 20px 150px;
+        padding: 20px 280px;
         background-color: #fff;
         height: 64vh;
         .refresh {
@@ -676,6 +663,9 @@ input[type="text"].subdomaintwo{
 // адаптив
 
 @media (max-width: 426px) {
+    .menu-btn {
+    display: block;
+    }
     .container {
         max-width: 420px;
         .socials {

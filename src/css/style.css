@@ -11,9 +11,13 @@ header {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.menu-btn {
+  display: none;
 }
 
 h1 {
@@ -52,7 +56,6 @@ form {
 
 .block {
   background-color: #fff;
-  width: 100%;
   margin: 0 auto;
   border-radius: 50px;
   padding: 0 230px;
@@ -157,7 +160,6 @@ form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 20px;
-  width: 100%;
 }
 .parameters input {
   border: 1px solid #32B34C;
@@ -293,7 +295,6 @@ form {
   transition: 2s ease;
   -webkit-transition-property: display;
   transition-property: display;
-  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -565,7 +566,7 @@ input[type=text].subdomaintwo {
 }
 .cartpage .cart_eaten {
   border-radius: 50px;
-  padding: 20px 150px;
+  padding: 20px 280px;
   background-color: #fff;
   height: 64vh;
 }
@@ -870,6 +871,9 @@ input[type=text].subdomaintwo {
 }
 
 @media (max-width: 426px) {
+  .menu-btn {
+    display: block;
+  }
   .container {
     max-width: 420px;
   }
