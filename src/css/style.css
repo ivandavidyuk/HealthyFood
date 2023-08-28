@@ -881,6 +881,8 @@ input[type=text].subdomaintwo {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .container .result {
     font-size: 12px;
@@ -996,22 +998,29 @@ input[type=text].subdomaintwo {
     line-height: 1.5;
     vertical-align: baseline;
   }
-  .btn-up {
+  .container .btn-up {
     z-index: 999;
     background-color: #f1f1f1;
   }
-  .copyright {
+  .container .copyright {
     font-size: 12px;
-    padding: 0 40px 20px 40px;
+    padding: 0 40px 10px 40px;
   }
-  .header__row-index .header__diet {
+  .container .header__row-index .header__diet {
     display: none;
   }
-  .header__row-cart .header__diet {
+  .container .header__row-cart .header__diet {
     display: none;
   }
-  .sex {
+  .container .sex {
     gap: 0px;
+  }
+  .container .sex label {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .container .block h3 {
+    font-size: 12px;
   }
 }
 @media (max-width: 376px) {
@@ -1047,7 +1056,7 @@ input[type=text].subdomaintwo {
     display: none;
   }
 }
-@media (max-width: 321px) {
+@media (max-width: 340px) {
   .container {
     max-width: 315px;
   }

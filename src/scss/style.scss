@@ -670,6 +670,8 @@ input[type="text"].subdomaintwo{
         max-width: 420px;
         .socials {
             justify-content: space-evenly;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
         .result {
             font-size: 12px;
@@ -783,27 +785,34 @@ input[type="text"].subdomaintwo{
                 }
             }
         }
+        .btn-up {
+            z-index: 999;
+            background-color: #f1f1f1;
+        }
+        .copyright {
+            font-size: 12px;
+            padding: 0 40px 10px 40px;
+        }
+        .header__row-index {
+            .header__diet {
+                display: none;
+            }
+        }
+        .header__row-cart {
+            .header__diet {
+                display: none;
+            }
+        }
+        .sex {
+            gap: 0px;
+        }
+        .sex label {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
     }
-    .btn-up {
-        z-index: 999;
-        background-color: #f1f1f1;
-    }
-    .copyright {
+    .container .block h3 {
         font-size: 12px;
-        padding: 0 40px 20px 40px;
-    }
-    .header__row-index {
-        .header__diet {
-            display: none;
-        }
-    }
-    .header__row-cart {
-        .header__diet {
-            display: none;
-        }
-    }
-    .sex {
-        gap: 0px;
     }
 }
 @media (max-width: 376px) {
@@ -840,7 +849,7 @@ input[type="text"].subdomaintwo{
     }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 340px) {
     .container {
         max-width: 315px;
         .block {
