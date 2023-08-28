@@ -897,6 +897,72 @@ input[type=text].subdomaintwo {
           flex: 1;
 }
 
+@media (max-width: 1025px) {
+  .header__row .header__menu {
+    left: 190px;
+  }
+  .info .socials {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .info .copyright {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 990px) {
+  .btn-up {
+    z-index: 999;
+    background-color: #f1f1f1;
+  }
+  .block {
+    padding: 0 130px;
+  }
+  .header__row .header__menu {
+    left: 160px;
+  }
+  .header__row .menu__list {
+    gap: 20px;
+  }
+  .header__row .header__menu {
+    font-size: 18px;
+  }
+  .program {
+    padding: 0 120px;
+  }
+  .reset {
+    font-size: 12px;
+  }
+  .activity button.submit {
+    font-size: 12px;
+  }
+  .program {
+    font-size: 14px;
+  }
+  .calories__amount {
+    font-size: 14px;
+  }
+  .dishes .dish {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 30%;
+    flex: 0 1 48%;
+  }
+  .dishes .dishes__list {
+    gap: 50px 27px;
+  }
+  .cartpage .cart_eaten {
+    padding: 20px 160px;
+  }
+  .cartpage .cart_eaten h1 {
+    margin-bottom: 20px;
+  }
+  .info .socials {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .info .copyright {
+    padding-bottom: 10px;
+  }
+}
 @media (max-width: 426px) {
   .menu-btn {
     display: block;
