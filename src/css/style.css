@@ -1010,6 +1010,9 @@ input[type=text].subdomaintwo {
   .header__row-cart .header__diet {
     display: none;
   }
+  .sex {
+    gap: 0px;
+  }
 }
 @media (max-width: 376px) {
   .container {
