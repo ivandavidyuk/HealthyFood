@@ -871,7 +871,7 @@ input[type=text].subdomaintwo {
 
 @media (max-width: 426px) {
   .container {
-    width: 420px;
+    max-width: 420px;
   }
   .container .socials {
     -webkit-box-pack: space-evenly;
@@ -1009,7 +1009,7 @@ input[type=text].subdomaintwo {
 }
 @media (max-width: 376px) {
   .container {
-    width: 370px;
+    max-width: 370px;
   }
   .container .result {
     padding: 20px 20px;
@@ -1042,7 +1042,7 @@ input[type=text].subdomaintwo {
 }
 @media (max-width: 321px) {
   .container {
-    width: 315px;
+    max-width: 315px;
   }
   .container .block {
     padding: 0px;
