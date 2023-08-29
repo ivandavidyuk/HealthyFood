@@ -1118,6 +1118,12 @@ input[type=text].subdomaintwo {
   .menu-btn {
     display: block;
   }
+  .dishes .dishes__list {
+    padding: 20px;
+  }
+  .index {
+    min-height: 95vh;
+  }
   .container {
     max-width: 420px;
   }
