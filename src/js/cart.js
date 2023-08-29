@@ -11,13 +11,6 @@ let eatenArray = JSON.parse(localStorage.getItem('eatenArrayStringified') || '[]
 
 eatenArray = eatenArray.filter(e => e)
 
-// eatenArray = eatenArray.filter(element => {
-//     if (Object.keys(element).length !== 0) {
-//         return true;
-//     }
-//     return false;
-// })
-
 let eatenList = document.querySelector('.eaten__list'),
     eatenTemplate = document.querySelector('.eaten__template'),
     eaten;
